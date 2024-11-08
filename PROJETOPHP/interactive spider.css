@@ -1,0 +1,40 @@
+body {
+    margin: 0; 
+    display: flex;
+    flex-direction: column; /* Garante que o conteúdo seja disposto em coluna */
+    justify-content: flex-start; /* Alinha o conteúdo no topo */
+    overflow-y: auto; 
+    height: 100%; /* Ocupa a altura total da viewport */
+    min-height: 100vh;
+}
+#conteudo-principal {
+    position: relative; 
+    z-index: 1; 
+    padding-top: 60px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    flex-grow: 1; /* Permite que o conteúdo principal se expanda */
+}
+#canvas {
+    position: absolute; /* Posiciona o canvas dentro da div */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Define o canvas para ficar atrás do conteúdo */ 
+}
+.navbar{
+    z-index: 1000;
+}
+.conteudo-tamanho {
+    padding-top: 230px; 
+}
+footer {
+    margin-top: 0; /* Remove qualquer margem superior */
+}
+
+
+
+    
